@@ -5,8 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material/slider';
+import { MaterialModule } from './material/material.module'
+
+
 
 @NgModule({
   declarations: [
@@ -15,9 +16,8 @@ import { MatSliderModule } from '@angular/material/slider';
   ],
   imports: [
     BrowserModule,
+    MaterialModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
