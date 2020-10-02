@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 
-import { MaterialModule } from './material/material.module'
+import { MaterialModule } from './shared/material/material.module'
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -17,6 +18,7 @@ import { MaterialModule } from './material/material.module'
   imports: [
     BrowserModule,
     MaterialModule,
+    FlexLayoutModule,
     AppRoutingModule,
   ],
   providers: [],

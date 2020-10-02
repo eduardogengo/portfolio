@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 
 
@@ -21,6 +22,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatSliderModule,
     MatIconModule,
     MatButtonModule,
+    MatSidenavModule
   ],
   exports: [
     // Material
@@ -28,7 +30,8 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserAnimationsModule,
     MatSliderModule,
     MatIconModule,
-    MatButtonModule,
+    MatButtonModule, 
+    MatSidenavModule
   ]
 })
 export class MaterialModule { }
