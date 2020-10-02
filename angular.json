@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "eduardogengo"
+    }
+  },
+  "defaultProject": "eduardogengo",
+  "cli": {
+    "analytics": "b98154fd-7307-499b-8b58-ef156400838d"
+  }
 }
