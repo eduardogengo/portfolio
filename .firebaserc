@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "gengo-portfolio"
+  },
+  "targets": {
+    "gengo-portfolio": {
+      "hosting": {
+        "eduardogengo": [
+          "gengo-portfolio"
+        ]
+      }
+    }
+  }
+}
