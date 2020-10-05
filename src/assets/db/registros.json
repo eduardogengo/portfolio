@@ -1,12 +1,71 @@
 {
     "registros": [
         {
-            "id": 1,
-            "nome": "Angular"
+            "redesSociais" : [
+                {
+                    "id": 1,
+                    "nome": "Facebook",
+                    "nomeIcon": "facebook",
+                    "link": "https://facebook.com/eduardogengo",
+                    "ativo": false
+                },
+                {
+                    "id": 2,
+                    "nome": "Instagram",
+                    "nomeIcon": "instagram",
+                    "link": "https://instagram.com/gengoeduardo",
+                    "ativo": false
+                },
+                {
+                    "id": 3,
+                    "nome": "Twitter",
+                    "nomeIcon": "twitter",
+                    "link": "https://twitter.com/eduardogengo",
+                    "ativo": false
+                },
+                {
+                    "id": 4,
+                    "nome": "Linked In",
+                    "nomeIcon": "linkedin",
+                    "link": "https://www.linkedin.com/in/eduardogengo/",
+                    "ativo": true
+                },
+                {
+                    "id": 5,
+                    "nome": "Whatsapp",
+                    "nomeIcon": "whatsapp",
+                    "link": "https://api.whatsapp.com/send?phone=5561920003819",
+                    "ativo": true
+                }
+            ]
         },
         {
-            "id": 2,
-            "nome": "Java OO"
+            "itensMenu" : [
+                {
+                    "id": 1,
+                    "nome": "About",
+                    "rota": "about",
+                    "ativo": true
+                },
+                {
+                    "id": 2,
+                    "nome": "Resume",
+                    "rota": "resume",
+                    "ativo": true
+                },
+                {
+                    "id": 3,
+                    "nome": "Blog",
+                    "rota": "blog",
+                    "ativo": true
+                },
+                {
+                    "id": 4,
+                    "nome": "Contact",
+                    "rota": "contact",
+                    "ativo": true
+                }
+            ]
         }
     ]
 }
