@@ -57,7 +57,7 @@
                     "id": 3,
                     "nome": "Blog",
                     "rota": "blog",
-                    "ativo": true
+                    "ativo": false
                 },
                 {
                     "id": 4,

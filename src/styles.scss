@@ -4,3 +4,15 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.tela-grande {
+    border: 1px solid #673AB730;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px 15px;
+}
+
+.tela-pequena {
+    padding: 5px 8px;
+}

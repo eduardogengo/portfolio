@@ -19,14 +19,17 @@
         </div>
     </mat-toolbar>
 
-    <mat-sidenav-container fxFlexFill class="example-container">
+    <mat-sidenav-container fxFlexFill class="example-container container">
         <mat-sidenav #sidenav fxLayout="column" position="end">
             <div fxLayout="column">
                 <!-- <a (click)="sidenav.toggle()" href="#" mat-button>Close</a> -->
                 <a (click)="sidenav.toggle()" *ngFor="let item of itensMenu" [routerLink]="['/', item.rota]" mat-button>{{ item.nome }}</a>
             </div>
         </mat-sidenav>
-        <mat-sidenav-content fxFlexFill>
+        <mat-sidenav-content 
+        ngClass.lt-md="tela-pequena"
+        ngClass.gt-sm="tela-grande"
+        >
             <router-outlet></router-outlet>
         </mat-sidenav-content>
     </mat-sidenav-container>
