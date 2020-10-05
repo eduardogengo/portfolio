@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { EmailService } from './../../shared/servicos/email.service';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private servico: EmailService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+
+  async fazerEnvio() {
+    try {
+      let res = await this.servico.enviarEmail(JSON.stringify({ email: 'teste do programa', mensagem: 'top top' }))
+      console.log("Resposta", res)
+    } catch (err) {
+      console.log("Erro ao enviar", err)
+    }
   }
 
 }
