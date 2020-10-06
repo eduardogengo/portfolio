@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
+import { environment } from 'src/environments/environment'
+import { AngularFireModule } from '@angular/fire'
+import { AngularFirestoreModule } from '@angular/fire/firestore'
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
@@ -14,6 +18,8 @@ import { ResumeComponent } from './paginas/resume/resume.component';
 import { BlogComponent } from './paginas/blog/blog.component';
 import { ContactComponent } from './paginas/contact/contact.component';
 import { NotFoundComponent } from './paginas/not-found/not-found.component';
+
+
 
 
 
@@ -34,6 +40,8 @@ import { NotFoundComponent } from './paginas/not-found/not-found.component';
     FlexLayoutModule,
     HttpClientModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
