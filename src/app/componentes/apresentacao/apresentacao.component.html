@@ -1,6 +1,19 @@
-<div class="container-apresentacao" [ngStyle]="{'backgroundColor': cor}" fxLayout="row">
-    <div fxHide.xs fxFlex.gt-xs="30%" class="foto">Canto esquerdo</div>
-    <div fxLayout.xs="row" fxFlex.gt-xs="10%" class="foto">Foto</div>
-    <div fxLayout.xs="row" fxFlex.gt-xs="30%" class="texto">Texto</div>
-    <div fxHide.xs fxFlex.gt-xs="30%" class="foto">Canto direito</div>
+<div class="container-apresentacao" [ngStyle]="{'backgroundColor': cor}">
+    <div class="card-area" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center">
+        <div class="foto-area" fxFlex="15">
+            <img class="foto" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                alt="Photo of a Shiba Inu">
+        </div>
+        <div class="texto-area" fxFlex="40">
+            <h2 class="titulo">
+                Eduardo Gengo
+            </h2>
+            <div class="texto">
+                Bla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla
+                bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla
+                bla
+            </div>
+            <button mat-raised-button color="primary" class="botao-hire-me">Hire Me</button>
+        </div>
+    </div>
 </div>
