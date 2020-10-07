@@ -27,7 +27,7 @@ export class ContactComponent implements OnInit {
   }
 
   lerRedes(){
-    this.servico.lerRedes().then((res) => console.log(res)).catch(err => console.log(err))
+    // this.servico.lerRedes().then((res) => console.log(res)).catch(err => console.log(err))
   }
 
 }
