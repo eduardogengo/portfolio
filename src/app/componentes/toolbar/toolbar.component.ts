@@ -47,7 +47,7 @@ export class ToolbarComponent implements OnInit {
       this.dados[1].itensMenu.forEach(item => {
         if (!!item.ativo) this.itensMenu.push(item)
       })
-      console.log("Itens do menu", this.itensMenu)
+      // console.log("Itens do menu", this.itensMenu)
     } catch (err) {
       console.log("Erro ao carregar Itens Menu", err)
     }

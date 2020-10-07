@@ -18,6 +18,7 @@ import { ResumeComponent } from './paginas/resume/resume.component';
 import { BlogComponent } from './paginas/blog/blog.component';
 import { ContactComponent } from './paginas/contact/contact.component';
 import { NotFoundComponent } from './paginas/not-found/not-found.component';
+import { ApresentacaoComponent } from './componentes/apresentacao/apresentacao.component';
 
 
 
@@ -33,6 +34,7 @@ import { NotFoundComponent } from './paginas/not-found/not-found.component';
     BlogComponent,
     ContactComponent,
     NotFoundComponent,
+    ApresentacaoComponent,
   ],
   imports: [
     BrowserModule,

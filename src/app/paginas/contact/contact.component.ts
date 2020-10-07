@@ -20,7 +20,7 @@ export class ContactComponent implements OnInit {
   async fazerEnvio() {
     try {
       let res = await this.servico.enviarEmail(JSON.stringify({ email: 'teste do programa', mensagem: 'top top' }))
-      console.log("Resposta", res)
+      // console.log("Resposta", res)
     } catch (err) {
       console.log("Erro ao enviar", err)
     }

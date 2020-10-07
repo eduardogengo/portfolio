@@ -13,7 +13,6 @@ export class RedeSocialComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log("Recebidos:", this.nomeIcon, this.link)
   }
 
 }

@@ -11,7 +11,7 @@ export class AppComponent implements OnInit{
   title = 'eduardogengo';
 
 ngOnInit() {
-  console.log("Db", db.registros)
+  // console.log("Db", db.registros)
 }
 
 }
