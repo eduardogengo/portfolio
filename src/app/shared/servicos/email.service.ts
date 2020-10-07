@@ -14,4 +14,8 @@ export class EmailService {
   enviarEmail(data) {
     return this.http.post('/apiemail', data).toPromise()
   }
+
+  lerRedes(){
+    return this.http.get('https://gengo-portfolio.firebaseio.com/redes.json').toPromise()
+  }
 }

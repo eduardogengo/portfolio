@@ -13,6 +13,7 @@ export class ContactComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.lerRedes()
   }
 
 
@@ -23,6 +24,10 @@ export class ContactComponent implements OnInit {
     } catch (err) {
       console.log("Erro ao enviar", err)
     }
+  }
+
+  lerRedes(){
+    this.servico.lerRedes().then((res) => console.log(res)).catch(err => console.log(err))
   }
 
 }
