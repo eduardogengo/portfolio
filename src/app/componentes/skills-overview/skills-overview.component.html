@@ -17,13 +17,13 @@
 
     <div class="cards-area" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center">
         <div class="frontend-card" fxFlex="20">
-            FE card
+            <app-skills-card nome="Front-End" [lista]="feTechs"></app-skills-card>
         </div>
         <div class="backend-card" fxFlex="20">
-            BE card
+            <app-skills-card nome="Back-End" [lista]="beTechs"></app-skills-card>
         </div>
         <div class="others-card" fxFlex="20">
-            Others card
+            <app-skills-card nome="Others" [lista]="othersTechs"></app-skills-card>
         </div>
     </div>
 </div>

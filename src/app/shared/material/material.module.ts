@@ -7,6 +7,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
 
 
 
@@ -22,7 +24,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatSliderModule,
     MatIconModule,
     MatButtonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatCardModule,
+    MatListModule,
+
   ],
   exports: [
     // Material
@@ -30,8 +35,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     BrowserAnimationsModule,
     MatSliderModule,
     MatIconModule,
-    MatButtonModule, 
-    MatSidenavModule
+    MatButtonModule,
+    MatSidenavModule,
+    MatCardModule,
+    MatListModule,
   ]
 })
 export class MaterialModule { }

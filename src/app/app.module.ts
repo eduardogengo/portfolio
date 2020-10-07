@@ -21,6 +21,7 @@ import { NotFoundComponent } from './paginas/not-found/not-found.component';
 import { ApresentacaoComponent } from './componentes/apresentacao/apresentacao.component';
 import { SkillsOverviewComponent } from './componentes/skills-overview/skills-overview.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { SkillsCardComponent } from './componentes/skills-card/skills-card.component';
 
 
 
@@ -39,6 +40,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
     ApresentacaoComponent,
     SkillsOverviewComponent,
     FooterComponent,
+    SkillsCardComponent,
   ],
   imports: [
     BrowserModule,
