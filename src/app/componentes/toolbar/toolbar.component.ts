@@ -1,7 +1,7 @@
-import { ItemMenu } from './../interfaces/item-menu';
+import { ItemMenu } from '../../interfaces/item-menu';
 import { Component, OnInit } from '@angular/core';
-import db from '../../assets/db/registros.json'
-import { Rede } from '../interfaces/rede-social'
+import db from '../../../assets/db/registros.json'
+import { Rede } from '../../interfaces/rede-social'
 
 
 @Component({

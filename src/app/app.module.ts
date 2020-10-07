@@ -8,7 +8,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
+import { ToolbarComponent } from './componentes/toolbar/toolbar.component';
 
 import { MaterialModule } from './shared/material/material.module'
 import { FlexLayoutModule } from '@angular/flex-layout';
