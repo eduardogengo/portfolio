@@ -20,6 +20,7 @@ import { ContactComponent } from './paginas/contact/contact.component';
 import { NotFoundComponent } from './paginas/not-found/not-found.component';
 import { ApresentacaoComponent } from './componentes/apresentacao/apresentacao.component';
 import { SkillsOverviewComponent } from './componentes/skills-overview/skills-overview.component';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 
 
@@ -37,6 +38,7 @@ import { SkillsOverviewComponent } from './componentes/skills-overview/skills-ov
     NotFoundComponent,
     ApresentacaoComponent,
     SkillsOverviewComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
