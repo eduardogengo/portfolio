@@ -19,6 +19,7 @@ import { BlogComponent } from './paginas/blog/blog.component';
 import { ContactComponent } from './paginas/contact/contact.component';
 import { NotFoundComponent } from './paginas/not-found/not-found.component';
 import { ApresentacaoComponent } from './componentes/apresentacao/apresentacao.component';
+import { SkillsOverviewComponent } from './componentes/skills-overview/skills-overview.component';
 
 
 
@@ -35,6 +36,7 @@ import { ApresentacaoComponent } from './componentes/apresentacao/apresentacao.c
     ContactComponent,
     NotFoundComponent,
     ApresentacaoComponent,
+    SkillsOverviewComponent,
   ],
   imports: [
     BrowserModule,
