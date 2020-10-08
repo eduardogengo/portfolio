@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Utils } from '../../shared/utils/utils'
 
 @Component({
   selector: 'app-apresentacao',
@@ -7,9 +8,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ApresentacaoComponent implements OnInit {
 
-  @Input('cor') cor: string;
+  @Input('cor') cor: string = this.utils.getCorPrincipal();
 
-  constructor() { }
+  constructor(
+    private utils: Utils
+  ) { }
 
   ngOnInit(): void {
     console.log("Cor recebida", this.cor)

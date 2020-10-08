@@ -7,36 +7,57 @@
                     "nome": "Facebook",
                     "nomeIcon": "facebook",
                     "link": "https://facebook.com/eduardogengo",
-                    "ativo": false
+                    "exibicao": "https://facebook.com/eduardogengo",
+                    "toolbar": false,
+                    "contactArea": false
+
                 },
                 {
                     "id": 2,
                     "nome": "Instagram",
                     "nomeIcon": "instagram",
                     "link": "https://instagram.com/gengoeduardo",
-                    "ativo": false
+                    "exibicao": "https://instagram.com/gengoeduardo",
+                    "toolbar": false,
+                    "contactArea": false
                 },
                 {
                     "id": 3,
                     "nome": "Twitter",
                     "nomeIcon": "twitter",
                     "link": "https://twitter.com/eduardogengo",
-                    "ativo": false
+                    "exibicao": "https://twitter.com/eduardogengo",
+                    "toolbar": false,
+                    "contactArea": false
                 },
                 {
                     "id": 4,
                     "nome": "Linked In",
                     "nomeIcon": "linkedin",
                     "link": "https://www.linkedin.com/in/eduardogengo/",
-                    "ativo": true
+                    "exibicao": "https://www.linkedin.com/in/eduardogengo/",
+                    "toolbar": true,
+                    "contactArea": false
                 },
                 {
                     "id": 5,
                     "nome": "Whatsapp",
                     "nomeIcon": "whatsapp",
                     "link": "https://api.whatsapp.com/send?phone=5561920003819",
-                    "ativo": true
+                    "exibicao": "+55 61 920003819",
+                    "toolbar": true,
+                    "contactArea": true
+                },
+                {
+                    "id": 6,
+                    "nome": "Email",
+                    "nomeIcon": "envelope",
+                    "link": "mailto: eduardogengo@gmail.com",
+                    "exibicao": "eduardogengo@gmail.com",
+                    "toolbar": false,
+                    "contactArea": true
                 }
+
             ]
         },
         {

@@ -1,0 +1,8 @@
+<div class="container-header" [ngStyle]="{'backgroundColor' : cor}" fxLayoutAlign.xs="center center">
+    <div class="area-titulo" fxLayout="row" fxLayoutAlign="center center">
+        <div class="titulo" fxFlex="80" fxFlex.xs="100">{{ titulo }}</div>
+    </div>
+    <div class="area-subtitulo" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+        <div class="subtitulo" *ngIf="!!subtitulo" fxFlex="75" fxFlex.xs="100">{{ subtitulo }}</div>
+    </div>
+</div>

@@ -3,5 +3,7 @@ export interface Rede {
     nome: string,
     nomeIcon: string,
     link: string,
-    ativo: boolean
+    toolbar: boolean,
+    contactArea: boolean,
+    exibicao: string
 }

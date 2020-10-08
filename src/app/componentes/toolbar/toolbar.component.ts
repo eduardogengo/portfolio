@@ -35,7 +35,7 @@ export class ToolbarComponent implements OnInit {
   carregaRedesSociais() {
     try {
       this.dados[0].redesSociais.forEach(item => {
-        if (!!item.ativo) this.redes.push(item)
+        if (!!item.toolbar) this.redes.push(item)
       })
     } catch (err) {
       console.log("Erro ao carregar redes sociais", err)

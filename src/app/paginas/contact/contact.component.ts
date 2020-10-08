@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Rede } from 'src/app/interfaces/rede-social';
+import db from '../../../assets/db/registros.json'
 
-import { EmailService } from './../../shared/servicos/email.service';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -8,26 +9,30 @@ import { EmailService } from './../../shared/servicos/email.service';
 })
 export class ContactComponent implements OnInit {
 
+  titulo = 'Contact'
+  subtitulo = 'Por aqui você pode entrar em contato comigo'
+
+  meiosDeContato: Rede[] = []
+
   constructor(
-    private servico: EmailService
   ) { }
 
   ngOnInit(): void {
-    this.lerRedes()
+    this.carregaMeiosDeContato()
   }
 
-
-  async fazerEnvio() {
+  dados;
+  carregaMeiosDeContato() {
     try {
-      let res = await this.servico.enviarEmail(JSON.stringify({ email: 'teste do programa', mensagem: 'top top' }))
-      // console.log("Resposta", res)
+    this.dados = db.registros
+      this.dados[0].redesSociais.forEach(item => {
+        if (!!item.contactArea) this.meiosDeContato.push(item)
+      })
     } catch (err) {
-      console.log("Erro ao enviar", err)
+      console.log("Erro ao carregar meios de contato", err)
     }
   }
 
-  lerRedes(){
-    // this.servico.lerRedes().then((res) => console.log(res)).catch(err => console.log(err))
-  }
+
 
 }

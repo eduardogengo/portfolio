@@ -22,7 +22,10 @@ import { ApresentacaoComponent } from './componentes/apresentacao/apresentacao.c
 import { SkillsOverviewComponent } from './componentes/skills-overview/skills-overview.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { SkillsCardComponent } from './componentes/skills-card/skills-card.component';
+import { HeaderComponent } from './componentes/header/header.component';
 
+import { Utils } from './shared/utils/utils';
+import { ContactCardComponent } from './componentes/contact-card/contact-card.component';
 
 
 
@@ -41,6 +44,8 @@ import { SkillsCardComponent } from './componentes/skills-card/skills-card.compo
     SkillsOverviewComponent,
     FooterComponent,
     SkillsCardComponent,
+    HeaderComponent,
+    ContactCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +56,7 @@ import { SkillsCardComponent } from './componentes/skills-card/skills-card.compo
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule
   ],
-  providers: [],
+  providers: [Utils],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
