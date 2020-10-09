@@ -1,11 +1,15 @@
 <app-header [titulo]="titulo" [subtitulo]="subtitulo"></app-header>
 
 <div class="container-resume">
-    <div>Exp 1</div>
-    <div>Exp 1</div>
-    <div>Exp 1</div>
-    <div>Exp 1</div>
-    <div>Exp 1</div>
+    <div class="work-xp-container">
+        <app-work-experience-card *ngFor="let item of workXPs"
+        [description]="item.description"
+        [initialDate]="item.initialDate"
+        [finalDate]="item.finalDate"
+        [company]="item.company"
+        [activities]="item.activities"
+        ></app-work-experience-card>
+    </div>
 </div>
 
 

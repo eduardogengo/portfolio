@@ -87,6 +87,28 @@
                     "ativo": true
                 }
             ]
+        },
+        {
+            "workXps" : [
+                {
+                    "id": 1,
+                    "description": "Web Developer",
+                    "initialDate": "05-2018",
+                    "finalDate": null,
+                    "company": "BBTS",
+                    "activities": "I worked as a web developer. I´ve create some web apps for intenal testing purposes. I used to work with Angular and NodeJS",
+                    "exibir": true
+                },
+                {
+                    "id": 1,
+                    "description": "B Web Developer",
+                    "initialDate": "05-2018",
+                    "finalDate": "12-2020",
+                    "company": "B BBTS",
+                    "activities": "B I worked as a web developer. I´ve create some web apps for intenal testing purposes. I used to work with Angular and NodeJS",
+                    "exibir": true
+                }
+            ]
         }
     ]
 }
