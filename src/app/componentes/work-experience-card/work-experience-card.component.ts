@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
+import { Utils } from './../../shared/utils/utils';
 import { WorkXP } from './../../interfaces/work-experience';
 
 @Component({
@@ -13,12 +15,16 @@ export class WorkExperienceCardComponent implements OnInit {
   @Input() initialDate: Date;
   @Input() finalDate: Date = null;
   @Input() company: string;
+  @Input() companyLink: string;
   @Input() activities: string;
 
   workXP: WorkXP;
 
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    private utils: Utils
+  ) { }
 
   ngOnInit(): void {
     this.carregaXP()
@@ -32,8 +38,13 @@ export class WorkExperienceCardComponent implements OnInit {
       initialDate: this.initialDate,
       finalDate: this.finalDate,
       company: this.company,
+      companyLink: this.companyLink,
       activities: this.activities
     }
+  }
+
+  redireciona(url) {
+    this.utils.redireciona(url)
   }
 
 }

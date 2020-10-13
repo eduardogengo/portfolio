@@ -4,6 +4,7 @@ export interface WorkXP {
     initialDate: Date,
     finalDate: Date,
     company: string,
+    companyLink: string,
     activities: string,
     exibir: boolean
 }

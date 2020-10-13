@@ -1,4 +1,32 @@
-<p>work-experience-card works!</p>
+<!-- <div class="card">
+    <div class="titulo">
+        <div class="description">
+            {{ workXP.description }}
+        </div>
+        <div class="dates">
+            {{ workXP.initialDate }} - {{ workXP.finalDate || 'current' }}
+        </div>
+    </div>
+    <div class="corpo">
+        <div class="company">{{ workXP.company }}</div>
+        <div class="activities">{{ workXP.activities }}</div>
+    </div>
+</div> -->
 
 
-{{ workXP | json }}
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title class="description">{{ workXP.description }} <span class="dates"> {{ workXP.initialDate }} -
+                {{ workXP.finalDate || 'current' }} </span></mat-card-title>
+        <mat-card-subtitle class="company">
+            <span class="pointable"  (click)="redireciona(workXP.companyLink)">{{ workXP.company }}</span>
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class="card-content">
+        <div class="activities">{{ workXP.activities }}</div>
+    </mat-card-content>
+</mat-card>
+
+<!-- <div>
+    {{workXP | json}}
+</div> -->

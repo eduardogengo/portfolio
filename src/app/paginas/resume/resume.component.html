@@ -1,14 +1,19 @@
 <app-header [titulo]="titulo" [subtitulo]="subtitulo"></app-header>
 
 <div class="container-resume">
-    <div class="work-xp-container">
-        <app-work-experience-card *ngFor="let item of workXPs"
-        [description]="item.description"
-        [initialDate]="item.initialDate"
-        [finalDate]="item.finalDate"
-        [company]="item.company"
-        [activities]="item.activities"
-        ></app-work-experience-card>
+    <div class="work-xp-container" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center" fxLayoutGap="10px">
+        <app-work-experience-card *ngFor="let item of workXPs" fxFlex="60" [description]="item.description"
+            [initialDate]="item.initialDate" [finalDate]="item.finalDate" [company]="item.company"
+            [companyLink]="item.companyLink" [activities]="item.activities"></app-work-experience-card>
+    </div>
+
+    <div class="area-extra-info">
+        <h2>Extra Info</h2>
+
+        <mat-list>
+            <mat-list-item *ngFor="let item of extraInfo">{{ item.title }}</mat-list-item>
+        </mat-list>
+
     </div>
 </div>
 

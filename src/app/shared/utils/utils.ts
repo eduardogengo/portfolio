@@ -9,6 +9,10 @@ export class Utils {
         return this.corPrincipal
     }
 
+    public redireciona(url) {
+        window.open(url)
+    }
+
 
 
 

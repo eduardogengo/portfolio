@@ -96,16 +96,41 @@
                     "initialDate": "05-2018",
                     "finalDate": null,
                     "company": "BBTS",
+                    "companyLink": "https://www.bbts.com.br/",
                     "activities": "I worked as a web developer. I´ve create some web apps for intenal testing purposes. I used to work with Angular and NodeJS",
                     "exibir": true
                 },
                 {
                     "id": 1,
-                    "description": "B Web Developer",
+                    "description": "TCU",
+                    "companyLink": "https://www.tcu.gov.br/",
                     "initialDate": "05-2018",
                     "finalDate": "12-2020",
                     "company": "B BBTS",
                     "activities": "B I worked as a web developer. I´ve create some web apps for intenal testing purposes. I used to work with Angular and NodeJS",
+                    "exibir": true
+                }
+            ]
+        },
+        {
+            "extraInfo" : [
+                {
+                    "id": 1,
+                    "title": "Brazilian and Italian Citzen",
+                    "description": "",
+                    "exibir": true
+
+                },
+                {
+                    "id": 2,
+                    "title": "Info 2",
+                    "description": "",
+                    "exibir": true
+                },
+                {
+                    "id": 3,
+                    "title": "Info 3",
+                    "description": "",
                     "exibir": true
                 }
             ]
