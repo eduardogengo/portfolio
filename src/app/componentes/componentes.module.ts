@@ -3,6 +3,8 @@ import { MaterialModule } from './../shared/material/material.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 import { WorkExperienceCardComponent } from './work-experience-card/work-experience-card.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { SkillsOverviewComponent } from './skills-overview/skills-overview.component';
@@ -12,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactCardComponent } from './contact-card/contact-card.component';
 import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
+
 
 
 @NgModule({
@@ -30,6 +33,7 @@ import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
   imports: [
     CommonModule,
     MaterialModule,
+    FlexLayoutModule,
     AppRoutingModule
   ],
   exports: [
@@ -41,7 +45,8 @@ import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
     SkillsCardComponent,
     SkillsOverviewComponent,
     ToolbarComponent,
-    WorkExperienceCardComponent
+    WorkExperienceCardComponent,
+    
   ]
 })
 export class ComponentesModule { }
