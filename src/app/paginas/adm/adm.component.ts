@@ -28,7 +28,7 @@ export class AdmComponent implements OnInit {
   getListaEditaveis(){
     this.admService.getListaEditaveisPeloPortal().then((res) => {
       console.log('Res', res);
-      this.listaAdm = this.utils.transformaObjetoVindoDoFirebaseEmArray(res).filter((item) => item.ativo);
+      this.listaAdm = this.utils.transformaObjetoVindoDoFirebaseEmArrayDoisNiveis(res).filter((item) => item.ativo);
     }).catch((err) => {
       console.log('Err', err);
     })
