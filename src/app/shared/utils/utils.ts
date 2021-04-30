@@ -13,6 +13,22 @@ export class Utils {
         window.open(url)
     }
 
+    transformaObjetoVindoDoFirebaseEmArray(entrada) {
+      var listaIds = Object.keys(entrada);
+      var listaValores = Object.values(entrada);
+      var propriedades = Object.keys(listaValores[0]);
+      var arrayRetorno = [];
+      listaIds.forEach((element, index) => {
+          arrayRetorno.push({
+              id: element
+          });
+          propriedades.forEach((element) => {
+              arrayRetorno[index][element] = listaValores[index][element]
+          })
+      });
+      return arrayRetorno;
+  }
+
 
 
 

@@ -8,12 +8,9 @@ import { AdmService } from '../../../shared/servicos/adm.service';
 })
 export class DetalheComponent implements OnInit {
 
-  arrayChaveValor = [];
-  obj = {};
-
+  arrayPropValor = [];
+  objParaAlteracao = {};
   caminho = window.history.state.caminho || '';
-
-
 
   constructor(
     private admService: AdmService
@@ -34,11 +31,11 @@ export class DetalheComponent implements OnInit {
   carregaDados(caminho){
     this.admService.getDados(caminho).then((res) => {
       console.log('Res', res);
-      this.obj = Object.assign({}, res);
+      this.objParaAlteracao = Object.assign({}, res);
       const campos = Object.keys(res);
       const valores = Object.values(res);
       campos.forEach((element, index) => {
-        this.arrayChaveValor.push({label: element, valor: valores[index]})
+        this.arrayPropValor.push({label: element, valor: valores[index]})
       });
     }).catch((err) => {
       console.log('err', err);
@@ -46,7 +43,7 @@ export class DetalheComponent implements OnInit {
   }
 
   atualizar(){
-    this.admService.atualizaDados(this.caminho, this.obj).then((res) => {
+    this.admService.atualizaDados(this.caminho, this.objParaAlteracao).then((res) => {
       console.log('Resposta da atualização', res)
     }).catch((err) => {
       console.log('erro ao atualizar', err);

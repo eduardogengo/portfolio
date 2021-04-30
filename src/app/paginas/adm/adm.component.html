@@ -6,7 +6,7 @@
   <!-- Position Column -->
   <ng-container matColumnDef="area">
     <th mat-header-cell *matHeaderCellDef> Área </th>
-    <td mat-cell class="pointable" *matCellDef="let element" (click)="acessaDetalhes(element.caminhoBd)"> {{element.nome}} </td>
+    <td mat-cell class="pointable" *matCellDef="let element" (click)="acessaDetalhes(element.rota_bd)"> {{element.nome}} </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

@@ -7,24 +7,22 @@ import { CONSTANTES } from '../utils/constantes';
 })
 export class AdmService {
 
-  EXT_JSON = '.json'
-
   constructor(
     private http: HttpClient
   ) { }
 
+  async getListaEditaveisPeloPortal(){
+    const retorno = await this.http.get(CONSTANTES.URL_BASE + CONSTANTES.CAMINHO_EDITAVEIS_PORTAL + CONSTANTES.EXTENSAO_BD).toPromise();
+    return retorno;
+  }
+
   async getDados(caminho){
     const retorno = await this.http.get(CONSTANTES.URL_BASE + caminho + CONSTANTES.EXTENSAO_BD).toPromise();
-    console.log('Retorno', retorno);
-
     return retorno;
   }
 
   async atualizaDados(caminho, obj){
-    console.log('obj', obj);
     const retorno = await this.http.patch(CONSTANTES.URL_BASE + caminho + CONSTANTES.EXTENSAO_BD, obj).toPromise();
-    console.log('Retorno', retorno);
-
     return retorno;
   }
 }
