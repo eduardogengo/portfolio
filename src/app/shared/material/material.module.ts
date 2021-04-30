@@ -9,6 +9,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table'
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 
 
@@ -27,6 +30,9 @@ import { MatListModule } from '@angular/material/list';
     MatSidenavModule,
     MatCardModule,
     MatListModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule
 
   ],
   exports: [
@@ -39,6 +45,9 @@ import { MatListModule } from '@angular/material/list';
     MatSidenavModule,
     MatCardModule,
     MatListModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule
   ]
 })
 export class MaterialModule { }

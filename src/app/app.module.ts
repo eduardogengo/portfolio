@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
+import { FormsModule } from '@angular/forms';
+
 import { environment } from 'src/environments/environment'
 import { AngularFireModule } from '@angular/fire'
 import { AngularFirestoreModule } from '@angular/fire/firestore'
@@ -19,6 +21,8 @@ import { ContactComponent } from './paginas/contact/contact.component';
 import { NotFoundComponent } from './paginas/not-found/not-found.component';
 
 import { Utils } from './shared/utils/utils';
+import { AdmComponent } from './paginas/adm/adm.component';
+import { DetalheComponent } from './paginas/adm/detalhe/detalhe.component';
 
 
 @NgModule({
@@ -29,6 +33,8 @@ import { Utils } from './shared/utils/utils';
     BlogComponent,
     ContactComponent,
     NotFoundComponent,
+    AdmComponent,
+    DetalheComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +44,8 @@ import { Utils } from './shared/utils/utils';
     HttpClientModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    FormsModule
   ],
   providers: [Utils],
   bootstrap: [AppComponent]

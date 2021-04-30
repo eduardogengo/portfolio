@@ -1,0 +1,12 @@
+<mat-form-field *ngFor="let item of arrayChaveValor">
+  <mat-label>{{item.label}}</mat-label>
+  <input matInput autocomplete="off" [(ngModel)]="obj[item.label]">
+</mat-form-field>
+
+<button (click)="atualizar()">Atualizar</button>
+
+
+
+<div>
+  obj: {{obj | json}}
+</div>
