@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
-import db from '../assets/db/registros.json'
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,7 +7,7 @@ import db from '../assets/db/registros.json'
 export class AppComponent implements OnInit{
   title = 'eduardogengo';
 
-ngOnInit() {
+ngOnInit(): void {
   // console.log("Db", db.registros)
 }
 

@@ -10,7 +10,7 @@ export class SkillsCardComponent implements OnInit {
   @Input('nome') nome: string;
   @Input('lista') techs: string[];
 
-  fetechnologies: string[] = ['angular', 'js', 'mongodb']
+  fetechnologies: string[] = ['angular', 'js', 'mongodb'];
 
   constructor() { }
 

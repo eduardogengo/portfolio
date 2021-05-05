@@ -46,7 +46,7 @@ import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
     SkillsOverviewComponent,
     ToolbarComponent,
     WorkExperienceCardComponent,
-    
+
   ]
 })
 export class ComponentesModule { }

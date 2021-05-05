@@ -1,6 +1,6 @@
 export interface ExtraInfo {
-    id: number,
+    id: number;
     title: string;
-    description: string,
-    exibir: boolean
+    description: string;
+    exibir: boolean;
 }

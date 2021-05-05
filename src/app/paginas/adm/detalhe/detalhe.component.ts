@@ -26,7 +26,7 @@ export class DetalheComponent implements OnInit {
 
   verificaSeCaminhoBdFoiPassado() {
     if (this.caminho) {
-      return true
+      return true;
     }
   }
 
@@ -34,19 +34,19 @@ export class DetalheComponent implements OnInit {
     this.admService.getDados(caminho).then((res) => {
       console.log('Res', res);
       this.objParaAlteracao = Object.assign({}, res);
-      this.arrayPropValor = this.utils.transformaObjetoVindoDoFirebaseEmArraySimples(res)
+      this.arrayPropValor = this.utils.transformaObjetoVindoDoFirebaseEmArraySimples(res);
       console.log('array', this.arrayPropValor);
     }).catch((err) => {
       console.log('err', err);
-    })
+    });
   }
 
   atualizar() {
     this.admService.atualizaDados(this.caminho, this.objParaAlteracao).then((res) => {
-      console.log('Resposta da atualização', res)
+      console.log('Resposta da atualização', res);
     }).catch((err) => {
       console.log('erro ao atualizar', err);
-    })
+    });
   }
 
 }

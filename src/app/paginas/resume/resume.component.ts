@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import db from '../../../assets/db/registros.json'
+import db from '../../../assets/db/registros.json';
 import { WorkXP } from './../../interfaces/work-experience';
 import { ExtraInfo } from './../../interfaces/extra-info';
 
@@ -11,36 +11,36 @@ import { ExtraInfo } from './../../interfaces/extra-info';
 })
 export class ResumeComponent implements OnInit {
 
-  titulo = 'Resume'
-  subtitulo = 'Some of the my most relevant IT professional experiences are listed here'
-
-  workXPs: WorkXP[] = []
-  extraInfo: ExtraInfo[] = []
-
   constructor() { }
 
-  ngOnInit(): void {
-    this.carregaDb()
-  }
+  titulo = 'Resume';
+  subtitulo = 'Some of the my most relevant IT professional experiences are listed here';
 
-  dados
+  workXPs: WorkXP[] = [];
+  extraInfo: ExtraInfo[] = [];
+
+  dados;
+
+  ngOnInit(): void {
+    this.carregaDb();
+  }
   carregaDb(){
     try{
-    this.dados = db.registros
-    this.carregaWorkXp()
-    this.carregaExtraInfo()
-    } catch(err) {
-      console.log("Erro ao carregar dados", err)
+    this.dados = db.registros;
+    this.carregaWorkXp();
+    this.carregaExtraInfo();
+    } catch (err) {
+      console.log('Erro ao carregar dados', err);
     }
   }
 
   carregaWorkXp() {
     try {
       this.dados[2].workXps.forEach(item => {
-        if (!!item.exibir) this.workXPs.push(item)
-      })
+        if (!!item.exibir) { this.workXPs.push(item); }
+      });
     } catch (err) {
-      console.log("Erro ao carregar redes sociais", err)
+      console.log('Erro ao carregar redes sociais', err);
     }
 
   }
@@ -48,10 +48,10 @@ export class ResumeComponent implements OnInit {
   carregaExtraInfo() {
     try {
       this.dados[3].extraInfo.forEach(item => {
-        if (!!item.exibir) this.extraInfo.push(item)
-      })
+        if (!!item.exibir) { this.extraInfo.push(item); }
+      });
     } catch (err) {
-      console.log("Erro ao carregar redes sociais", err)
+      console.log('Erro ao carregar redes sociais', err);
     }
 
   }

@@ -3,28 +3,28 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class Utils {
 
-  private corPrincipal = '#0000ff30'
+  private corPrincipal = '#0000ff30';
 
   getCorPrincipal(): string {
-    return this.corPrincipal
+    return this.corPrincipal;
   }
 
   public redireciona(url) {
-    window.open(url)
+    window.open(url);
   }
 
   transformaObjetoVindoDoFirebaseEmArrayDoisNiveis(entrada) {
-    var listaIds = Object.keys(entrada);
-    var listaValores = Object.values(entrada);
-    var propriedades = Object.keys(listaValores[0]);
-    var arrayRetorno = [];
+    const listaIds = Object.keys(entrada);
+    const listaValores = Object.values(entrada);
+    const propriedades = Object.keys(listaValores[0]);
+    const arrayRetorno = [];
     listaIds.forEach((element, index) => {
       arrayRetorno.push({
         id: element
       });
-      propriedades.forEach((element) => {
-        arrayRetorno[index][element] = listaValores[index][element]
-      })
+      propriedades.forEach((item) => {
+        arrayRetorno[index][item] = listaValores[index][item];
+      });
     });
     return arrayRetorno;
   }
@@ -34,7 +34,7 @@ export class Utils {
     const campos = Object.keys(entrada);
     const valores = Object.values(entrada);
     campos.forEach((element, index) => {
-      arrayPropValor.push({ label: element, valor: valores[index] })
+      arrayPropValor.push({ label: element, valor: valores[index] });
     });
     return arrayPropValor;
   }

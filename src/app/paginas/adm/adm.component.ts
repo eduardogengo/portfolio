@@ -31,7 +31,7 @@ export class AdmComponent implements OnInit {
       this.listaAdm = this.utils.transformaObjetoVindoDoFirebaseEmArrayDoisNiveis(res).filter((item) => item.ativo);
     }).catch((err) => {
       console.log('Err', err);
-    })
+    });
   }
 
   acessaDetalhes(caminho: string) {

@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsOverviewComponent implements OnInit {
 
-  feTechs: string[] = ['angular', 'css', 'html']
-  beTechs: string[] = ['node', 'mongodb']
-  othersTechs: string[] = ['git']
+  feTechs: string[] = ['angular', 'css', 'html'];
+  beTechs: string[] = ['node', 'mongodb'];
+  othersTechs: string[] = ['git'];
 
   constructor() { }
 

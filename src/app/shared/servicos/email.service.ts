@@ -8,11 +8,11 @@ export class EmailService {
 
   constructor(
     private http: HttpClient
-    
+
   ) { }
 
   enviarEmail(data) {
-    return this.http.post('/apiemail', data).toPromise()
+    return this.http.post('/apiemail', data).toPromise();
   }
 
   // lerRedes(){

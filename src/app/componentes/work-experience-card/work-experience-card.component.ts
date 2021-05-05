@@ -27,7 +27,7 @@ export class WorkExperienceCardComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.carregaXP()
+    this.carregaXP();
   }
 
   carregaXP() {
@@ -40,11 +40,11 @@ export class WorkExperienceCardComponent implements OnInit {
       company: this.company,
       companyLink: this.companyLink,
       activities: this.activities
-    }
+    };
   }
 
   redireciona(url) {
-    this.utils.redireciona(url)
+    this.utils.redireciona(url);
   }
 
 }

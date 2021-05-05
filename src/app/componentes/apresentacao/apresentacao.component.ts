@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Utils } from '../../shared/utils/utils'
+import { Utils } from '../../shared/utils/utils';
 
 @Component({
   selector: 'app-apresentacao',
@@ -15,7 +15,7 @@ export class ApresentacaoComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    console.log("Cor recebida", this.cor)
+    console.log('Cor recebida', this.cor);
   }
 
 }

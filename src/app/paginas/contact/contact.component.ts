@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Rede } from 'src/app/interfaces/rede-social';
-import db from '../../../assets/db/registros.json'
+import db from '../../../assets/db/registros.json';
 
 @Component({
   selector: 'app-contact',
@@ -9,27 +9,27 @@ import db from '../../../assets/db/registros.json'
 })
 export class ContactComponent implements OnInit {
 
-  titulo = 'Contact'
-  subtitulo = 'Por aqui você pode entrar em contato comigo'
-
-  meiosDeContato: Rede[] = []
-
   constructor(
   ) { }
 
-  ngOnInit(): void {
-    this.carregaMeiosDeContato()
-  }
+  titulo = 'Contact';
+  subtitulo = 'Por aqui você pode entrar em contato comigo';
+
+  meiosDeContato: Rede[] = [];
 
   dados;
+
+  ngOnInit(): void {
+    this.carregaMeiosDeContato();
+  }
   carregaMeiosDeContato() {
     try {
-    this.dados = db.registros
+      this.dados = db.registros;
       this.dados[0].redesSociais.forEach(item => {
-        if (!!item.contactArea) this.meiosDeContato.push(item)
-      })
+        if (!!item.contactArea) { this.meiosDeContato.push(item); }
+      });
     } catch (err) {
-      console.log("Erro ao carregar meios de contato", err)
+      console.log('Erro ao carregar meios de contato', err);
     }
   }
 
