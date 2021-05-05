@@ -8,15 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "pre-push": "npm run lint"
+    "pre-push": "npm run lint",
+    "prepare": "husky install"
   },
   "private": true,
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint --watch=false",
-      "pre-push": "npm run lint"
-    }
-  },
   "dependencies": {
     "@angular/animations": "~10.0.11",
     "@angular/cdk": "^10.2.3",
@@ -47,7 +42,6 @@
     "codelyzer": "^6.0.0",
     "firebase-tools": "^8.0.0",
     "fuzzy": "^0.1.3",
-    "husky": "^6.0.0",
     "inquirer": "^6.2.2",
     "inquirer-autocomplete-prompt": "^1.0.1",
     "jasmine-core": "~3.5.0",
@@ -61,6 +55,7 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~3.9.5"
+    "typescript": "~3.9.5",
+    "husky": "^6.0.0"
   }
 }
