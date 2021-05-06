@@ -1,6 +1,6 @@
 import { AppRoutingModule } from './../app-routing.module';
 import { MaterialModule } from './../shared/material/material.module';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -12,8 +12,9 @@ import { SkillsCardComponent } from './skills-card/skills-card.component';
 import { RedeSocialComponent } from './rede-social/rede-social.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { ContactItemComponent } from './contact-item/contact-item.component';
+import { ContactItemComponent } from './contact-container/contact-item/contact-item.component';
 import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
+import { ContactContainerComponent } from './contact-container/contact-container.component';
 
 
 
@@ -27,7 +28,8 @@ import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
     SkillsCardComponent,
     SkillsOverviewComponent,
     ToolbarComponent,
-    WorkExperienceCardComponent
+    WorkExperienceCardComponent,
+    ContactContainerComponent
 
   ],
   imports: [
@@ -46,7 +48,10 @@ import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
     SkillsOverviewComponent,
     ToolbarComponent,
     WorkExperienceCardComponent,
-
+    ContactContainerComponent
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ]
 })
 export class ComponentesModule { }
