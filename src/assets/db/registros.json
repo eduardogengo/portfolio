@@ -1,139 +1,136 @@
 {
-    "registros": [
+  "registros": [
+    {
+      "redesSociais": [
         {
-            "redesSociais" : [
-                {
-                    "id": 1,
-                    "nome": "Facebook",
-                    "nomeIcon": "facebook",
-                    "link": "https://facebook.com/eduardogengo",
-                    "exibicao": "https://facebook.com/eduardogengo",
-                    "toolbar": false,
-                    "contactArea": false
-
-                },
-                {
-                    "id": 2,
-                    "nome": "Instagram",
-                    "nomeIcon": "instagram",
-                    "link": "https://instagram.com/gengoeduardo",
-                    "exibicao": "https://instagram.com/gengoeduardo",
-                    "toolbar": false,
-                    "contactArea": false
-                },
-                {
-                    "id": 3,
-                    "nome": "Twitter",
-                    "nomeIcon": "twitter",
-                    "link": "https://twitter.com/eduardogengo",
-                    "exibicao": "https://twitter.com/eduardogengo",
-                    "toolbar": false,
-                    "contactArea": false
-                },
-                {
-                    "id": 4,
-                    "nome": "Linked In",
-                    "nomeIcon": "linkedin",
-                    "link": "https://www.linkedin.com/in/eduardogengo/",
-                    "exibicao": "https://www.linkedin.com/in/eduardogengo/",
-                    "toolbar": true,
-                    "contactArea": false
-                },
-                {
-                    "id": 5,
-                    "nome": "Whatsapp",
-                    "nomeIcon": "whatsapp",
-                    "link": "https://api.whatsapp.com/send?phone=5561920003819",
-                    "exibicao": "+55 61 920003819",
-                    "toolbar": true,
-                    "contactArea": true
-                },
-                {
-                    "id": 6,
-                    "nome": "Email",
-                    "nomeIcon": "envelope",
-                    "link": "mailto: eduardogengo@gmail.com",
-                    "exibicao": "eduardogengo@gmail.com",
-                    "toolbar": false,
-                    "contactArea": true
-                }
-
-            ]
+          "id": 1,
+          "nome": "Facebook",
+          "nomeIcon": "facebook",
+          "link": "https://facebook.com/eduardogengo",
+          "exibicao": "https://facebook.com/eduardogengo",
+          "toolbar": false,
+          "contactArea": false
         },
         {
-            "itensMenu" : [
-                {
-                    "id": 1,
-                    "nome": "About",
-                    "rota": "about",
-                    "ativo": true
-                },
-                {
-                    "id": 2,
-                    "nome": "Resume",
-                    "rota": "resume",
-                    "ativo": true
-                },
-                {
-                    "id": 3,
-                    "nome": "Blog",
-                    "rota": "blog",
-                    "ativo": false
-                },
-                {
-                    "id": 4,
-                    "nome": "Contact",
-                    "rota": "contact",
-                    "ativo": true
-                }
-            ]
+          "id": 2,
+          "nome": "Instagram",
+          "nomeIcon": "instagram",
+          "link": "https://instagram.com/gengoeduardo",
+          "exibicao": "https://instagram.com/gengoeduardo",
+          "toolbar": false,
+          "contactArea": false
         },
         {
-            "workXps" : [
-                {
-                    "id": 1,
-                    "description": "Web Developer",
-                    "initialDate": "05-2018",
-                    "finalDate": null,
-                    "company": "BBTS",
-                    "companyLink": "https://www.bbts.com.br/",
-                    "activities": "I worked as a web developer. I´ve create some web apps for intenal testing purposes. I used to work with Angular and NodeJS",
-                    "exibir": true
-                },
-                {
-                    "id": 1,
-                    "description": "TCU",
-                    "companyLink": "https://www.tcu.gov.br/",
-                    "initialDate": "05-2018",
-                    "finalDate": "12-2020",
-                    "company": "B BBTS",
-                    "activities": "B I worked as a web developer. I´ve create some web apps for intenal testing purposes. I used to work with Angular and NodeJS",
-                    "exibir": true
-                }
-            ]
+          "id": 3,
+          "nome": "Twitter",
+          "nomeIcon": "twitter",
+          "link": "https://twitter.com/eduardogengo",
+          "exibicao": "https://twitter.com/eduardogengo",
+          "toolbar": false,
+          "contactArea": false
         },
         {
-            "extraInfo" : [
-                {
-                    "id": 1,
-                    "title": "Brazilian and Italian Citzen",
-                    "description": "",
-                    "exibir": true
-
-                },
-                {
-                    "id": 2,
-                    "title": "Info 2",
-                    "description": "",
-                    "exibir": true
-                },
-                {
-                    "id": 3,
-                    "title": "Info 3",
-                    "description": "",
-                    "exibir": true
-                }
-            ]
+          "id": 4,
+          "nome": "Linked In",
+          "nomeIcon": "linkedin",
+          "link": "https://www.linkedin.com/in/eduardogengo/",
+          "exibicao": "https://www.linkedin.com/in/eduardogengo/",
+          "toolbar": true,
+          "contactArea": false
+        },
+        {
+          "id": 5,
+          "nome": "Whatsapp",
+          "nomeIcon": "whatsapp",
+          "link": "https://api.whatsapp.com/send?phone=5561920003819",
+          "exibicao": "+55 61 920003819",
+          "toolbar": true,
+          "contactArea": true
+        },
+        {
+          "id": 6,
+          "nome": "Email",
+          "nomeIcon": "envelope",
+          "link": "mailto: eduardogengo@gmail.com",
+          "exibicao": "eduardogengo@gmail.com",
+          "toolbar": false,
+          "contactArea": true
         }
-    ]
+      ]
+    },
+    {
+      "itensMenu": [
+        {
+          "id": 1,
+          "nome": "About",
+          "rota": "about",
+          "ativo": true
+        },
+        {
+          "id": 2,
+          "nome": "Resume",
+          "rota": "resume",
+          "ativo": true
+        },
+        {
+          "id": 3,
+          "nome": "Blog",
+          "rota": "blog",
+          "ativo": false
+        },
+        {
+          "id": 4,
+          "nome": "Contact",
+          "rota": "contact",
+          "ativo": true
+        }
+      ]
+    },
+    {
+      "workXps": [
+        {
+          "id": 1,
+          "description": "Web Developer",
+          "initialDate": "05-2018",
+          "finalDate": null,
+          "company": "BBTS",
+          "companyLink": "https://www.bbts.com.br/",
+          "activities": "I worked as a web developer. I´ve create some web apps for intenal testing purposes. I used to work with Angular and NodeJS",
+          "exibir": true
+        },
+        {
+          "id": 1,
+          "description": "TCU",
+          "companyLink": "https://www.tcu.gov.br/",
+          "initialDate": "05-2018",
+          "finalDate": "12-2020",
+          "company": "B BBTS",
+          "activities": "B I worked as a web developer. I´ve create some web apps for intenal testing purposes. I used to work with Angular and NodeJS",
+          "exibir": true
+        }
+      ]
+    },
+    {
+      "extraInfo": [
+        {
+          "id": 1,
+          "title": "Brazilian and Italian Citzen",
+          "description": "",
+          "exibir": true
+        },
+        {
+          "id": 2,
+          "title": "Info 2",
+          "description": "",
+          "exibir": true
+        },
+        {
+          "id": 3,
+          "title": "Info 3",
+          "description": "",
+          "exibir": true
+        }
+      ]
+    }
+  ]
 }

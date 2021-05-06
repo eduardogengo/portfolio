@@ -1,14 +1,14 @@
 {
   "name": "eduardogengo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.conf.js",
     "build": "ng build --prod",
-    "test": "ng test --codeCoverage=true",
+    "test": "ng test --watch=false --sourceMap=true --browsers=ChromeHeadlessNoSandbox --codeCoverage=true",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "pre-push": "npm run lint",
+    "pre-push": "npm run lint && npm run test",
     "prepare": "husky install"
   },
   "private": true,
