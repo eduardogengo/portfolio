@@ -1,11 +1,11 @@
 {
   "name": "eduardogengo",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.conf.js",
     "build": "ng build --prod",
-    "test": "ng test",
+    "test": "ng test --codeCoverage=true",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "pre-push": "npm run lint",
@@ -27,6 +27,7 @@
     "@angular/router": "~10.0.11",
     "firebase": "^7.13.1",
     "font-awesome": "^4.7.0",
+    "puppeteer": "^9.1.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"

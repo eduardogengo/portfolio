@@ -6,9 +6,9 @@
     </div>
     <div class="area-cards" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="10px">
         <div class="card" fxFlex="25" *ngFor="let item of meiosDeContato">
-            <app-contact-card [icone]="item.nomeIcon" [endereco]="item.exibicao" [link]="item.link"></app-contact-card>
+            <app-contact-item [icone]="item.nomeIcon" [endereco]="item.exibicao" [link]="item.link"></app-contact-item>
         </div>
-        
+
     </div>
 </div>
 
