@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { ContactItemComponent } from './contact-item.component';
 
@@ -8,7 +9,10 @@ describe('ContactItemComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ContactItemComponent]
+      declarations: [ContactItemComponent],
+      schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
+      ],
     })
       .compileComponents();
   }));
