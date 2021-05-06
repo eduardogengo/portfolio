@@ -12,7 +12,7 @@ import { SkillsCardComponent } from './skills-card/skills-card.component';
 import { RedeSocialComponent } from './rede-social/rede-social.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { ContactCardComponent } from './contact-card/contact-card.component';
+import { ContactItemComponent } from './contact-item/contact-item.component';
 import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
 
 
@@ -20,7 +20,7 @@ import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
 @NgModule({
   declarations: [
     ApresentacaoComponent,
-    ContactCardComponent,
+    ContactItemComponent,
     FooterComponent,
     HeaderComponent,
     RedeSocialComponent,
@@ -38,7 +38,7 @@ import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
   ],
   exports: [
     ApresentacaoComponent,
-    ContactCardComponent,
+    ContactItemComponent,
     FooterComponent,
     HeaderComponent,
     RedeSocialComponent,

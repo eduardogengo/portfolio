@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-contact-card',
-  templateUrl: './contact-card.component.html',
-  styleUrls: ['./contact-card.component.scss']
+  selector: 'app-contact-item',
+  templateUrl: './contact-item.component.html',
+  styleUrls: ['./contact-item.component.scss']
 })
-export class ContactCardComponent implements OnInit {
+export class ContactItemComponent implements OnInit {
 
   @Input() icone: string;
   @Input() endereco: string;
