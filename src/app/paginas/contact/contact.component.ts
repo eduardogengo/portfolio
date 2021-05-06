@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Rede } from 'src/app/interfaces/rede-social';
+import { RedeSocial } from 'src/app/interfaces/rede-social';
 import db from '../../../assets/db/registros.json';
 
 @Component({
@@ -15,7 +15,7 @@ export class ContactComponent implements OnInit {
   titulo = 'Contact';
   subtitulo = 'Por aqui você pode entrar em contato comigo';
 
-  meiosDeContato: Rede[] = [];
+  meiosDeContato: RedeSocial[] = [];
 
   dados;
 

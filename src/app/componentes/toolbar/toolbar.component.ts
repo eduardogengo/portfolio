@@ -1,7 +1,7 @@
 import { ItemMenu } from '../../interfaces/item-menu';
 import { Component, OnInit } from '@angular/core';
 import db from '../../../assets/db/registros.json';
-import { Rede } from '../../interfaces/rede-social';
+import { RedeSocial } from '../../interfaces/rede-social';
 
 
 @Component({
@@ -13,7 +13,7 @@ export class ToolbarComponent implements OnInit {
 
 
   dados;
-  redes: Rede[] = [];
+  redes: RedeSocial[] = [];
   itensMenu: ItemMenu[] = [];
 
   constructor() { }
@@ -24,9 +24,9 @@ export class ToolbarComponent implements OnInit {
     this.carregaItensMenu();
   }
 
-  carregaDb(){
-    try{
-    this.dados = db.registros;
+  carregaDb() {
+    try {
+      this.dados = db.registros;
     } catch (err) {
       console.log('Erro ao carregar dados', err);
     }
