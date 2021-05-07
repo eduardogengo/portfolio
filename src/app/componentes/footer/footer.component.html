@@ -1,13 +1,9 @@
 <div class="container-footer" [ngStyle]="{'backgroundColor': cor}">
-    <div fxLayout="row" fxLayoutAlign="center" class="area-foto">
-        <div  fxFlex="15" fxFlex.xs="60">
-            <img class="foto" src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-                alt="Photo of a Shiba Inu">
-        </div>
+  <div fxLayout="row" fxLayoutAlign="center" class="area-texto">
+    <div class="texto" fxFlex="60" fxFlex.xs="90">
+      <mat-icon>copyright</mat-icon>
+      <span class="dateToday">{{ dateToday | date: 'yyyy'}}</span>
+      <span class="devName">{{ devName }}</span>
     </div>
-    <div fxLayout="row" fxLayoutAlign="center" class="area-texto">
-        <div class="texto" fxFlex="60" fxFlex.xs="90">
-            lkad ksajdksadj sad lasd sadj skadj sad lskadj sdj lskdj salkdj sakld sakd lsakdjaskl
-        </div>
-    </div>
+  </div>
 </div>

@@ -9,12 +9,19 @@ import { Utils } from '../../shared/utils/utils';
 export class FooterComponent implements OnInit {
 
   @Input('cor') cor: string = this.utils.getCorPrincipal();
+  dateToday: Date;
+  devName: string;
 
   constructor(
     private utils: Utils
   ) { }
 
   ngOnInit(): void {
+    this.loadsInicialInfo();
   }
 
+  loadsInicialInfo() {
+    this.dateToday = this.utils.getDate();
+    this.devName = this.utils.getDevName();
+  }
 }
