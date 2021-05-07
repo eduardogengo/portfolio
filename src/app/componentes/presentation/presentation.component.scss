@@ -1,0 +1,33 @@
+.card-area {
+  padding: 30px 0;
+}
+
+.foto {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(60%);
+}
+
+.texto-area {
+  margin: 10px 5px 5px 5px;
+  text-align: center;
+}
+
+.texto {
+  text-indent: 10%;
+  margin-bottom: 30px;
+  text-align: justify;
+  font-size: 13pt;
+}
+
+.botao-contact-me {
+  font-size: 15pt;
+}
+
+.titulo {
+  font-size: 20pt;
+}

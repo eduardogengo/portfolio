@@ -25,10 +25,10 @@ export class AdmComponent implements OnInit {
     this.getListaEditaveis();
   }
 
-  getListaEditaveis(){
+  getListaEditaveis() {
     this.admService.getListaEditaveisPeloPortal().then((res) => {
       console.log('Res', res);
-      this.listaAdm = this.utils.transformaObjetoVindoDoFirebaseEmArrayDoisNiveis(res).filter((item) => item.ativo);
+      // this.listaAdm = this.utils.transformaObjetoVindoDoFirebaseEmArrayDoisNiveis(res).filter((item) => item.ativo);
     }).catch((err) => {
       console.log('Err', err);
     });
@@ -36,7 +36,7 @@ export class AdmComponent implements OnInit {
 
   acessaDetalhes(caminho: string) {
     console.log('Caminho', caminho);
-    this.router.navigateByUrl('/adm-detalhe', {state: {caminho}});
+    this.router.navigateByUrl('/adm-detalhe', { state: { caminho } });
   }
 
 }
