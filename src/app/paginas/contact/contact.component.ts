@@ -13,7 +13,7 @@ export class ContactComponent implements OnInit {
   ) { }
 
   titulo = 'Contact';
-  subtitulo = 'Por aqui você pode entrar em contato comigo';
+  subtitulo = 'You can contact me by these means';
 
   meiosDeContato: RedeSocial[] = [];
 

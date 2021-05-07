@@ -1,9 +1,6 @@
 <div class="contact-container">
-  <div class="area-texto" fxLayout.xs="row" fxLayoutAlign="center center">
-    <div class="texto" fxFlex.xs="90" fxFlex="60">Reach out to me:</div>
-  </div>
   <div class="area-cards" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="10px">
-    <div class="card" fxFlex="20" *ngFor="let item of redesSelecionadas">
+    <div class="card" fxFlex="25" *ngFor="let item of redesSelecionadas">
       <app-contact-item [icone]="item.nomeIcon" [endereco]="item.exibicao" [link]="item.link"></app-contact-item>
     </div>
   </div>
