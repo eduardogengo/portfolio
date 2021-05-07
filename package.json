@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.conf.js",
     "build": "ng build --prod",
+    "test-w": "ng test --sourceMap=true --browsers=ChromeHeadlessNoSandbox --codeCoverage=true",
     "test": "ng test --watch=false --sourceMap=true --browsers=ChromeHeadlessNoSandbox --codeCoverage=true",
     "lint": "ng lint",
     "e2e": "ng e2e",
