@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
 
   @Input() titulo: string;
   @Input() subtitulo: string;
-  @Input() cor: string = this.utils.getCorPrincipal();
+  cor: string = this.utils.getCorPrincipal();
 
   constructor(
     private utils: Utils
@@ -18,5 +18,4 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
