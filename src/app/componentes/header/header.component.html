@@ -1,8 +1,12 @@
 <div class="container-header" [ngStyle]="{'backgroundColor' : cor}">
-  <div class="area-titulo" fxLayout="row" fxLayoutAlign="center center">
-    <div class="titulo" fxFlex="90">{{ titulo }}</div>
-  </div>
-  <div class="area-subtitulo" fxLayout="row" fxLayoutAlign="center center">
-    <div class="subtitulo" *ngIf="!!subtitulo" fxFlex="80">{{ subtitulo }}</div>
+  <div fxLayout="row" fxLayoutAlign="center">
+    <div fxFlex.gt-xs="60">
+      <div class="area-titulo" fxLayout="row" fxLayoutAlign="center center">
+        <div class="titulo" fxFlex="90">{{ titulo }}</div>
+      </div>
+      <div class="area-subtitulo" fxLayout="row" fxLayoutAlign="center center">
+        <div class="subtitulo" *ngIf="!!subtitulo" fxFlex="80">{{ subtitulo }}</div>
+      </div>
+    </div>
   </div>
 </div>
