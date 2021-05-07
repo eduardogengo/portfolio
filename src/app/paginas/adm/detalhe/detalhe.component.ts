@@ -34,7 +34,7 @@ export class DetalheComponent implements OnInit {
     this.admService.getDados(caminho).then((res) => {
       console.log('Res', res);
       this.objParaAlteracao = Object.assign({}, res);
-      this.arrayPropValor = this.utils.transformaObjetoVindoDoFirebaseEmArraySimples(res);
+      // this.arrayPropValor = this.utils.transformaObjetoVindoDoFirebaseEmArraySimples(res);
       console.log('array', this.arrayPropValor);
     }).catch((err) => {
       console.log('err', err);

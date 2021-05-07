@@ -1,0 +1,23 @@
+<div class="container-presentation" [ngStyle]="{'backgroundColor': cor}">
+  <div class="card-area" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+    <div class="foto-area" fxFlex="15">
+      <img class="foto" src="../../../assets/images/gengo.jpg" alt="Eduardo Gengo">
+    </div>
+    <div class="texto-area" fxFlex="45">
+      <h2 class="titulo">
+        {{devName}}
+      </h2>
+      <div class="texto" fxLayout="row" fxLayoutAlign="center">
+        <div fxFlex.xs="80" fxFlex="50">
+          I´ve worked as front-end developer since 2018.
+          Angular framework is the one I use the most and also my favorite.
+          I can also create node apis
+        </div>
+      </div>
+      <div class="botao-area" fxLayout="row" fxLayoutAlign="center">
+        <button mat-raised-button color="primary" class="botao-contact-me" fxFlex.xs="80" fxFlex="20"
+          routerLink="/contact">Contact Me</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -13,14 +13,14 @@ import { RedeSocialComponent } from './rede-social/rede-social.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactItemComponent } from './contact-container/contact-item/contact-item.component';
-import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
+import { PresentationComponent } from './presentation/presentation.component';
 import { ContactContainerComponent } from './contact-container/contact-container.component';
 
 
 
 @NgModule({
   declarations: [
-    ApresentacaoComponent,
+    PresentationComponent,
     ContactItemComponent,
     FooterComponent,
     HeaderComponent,
@@ -39,7 +39,7 @@ import { ContactContainerComponent } from './contact-container/contact-container
     AppRoutingModule
   ],
   exports: [
-    ApresentacaoComponent,
+    PresentationComponent,
     ContactItemComponent,
     FooterComponent,
     HeaderComponent,
